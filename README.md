@@ -12,20 +12,11 @@ The project also includes a PowerShell module named 'DockerHelper' with cmdlets 
 
 2. Navigate to the project directory in your terminal.
 
-3. Build the Docker image by running the following command:
+3. Build and run the Docker image by running the following command:
 
 ```bash
-docker build -t fibonacci .
+.\RunFibonacciContainer.ps1
 ```
-
-4. Run the Fibonacci container with the following command:
-```bash
-docker run -d fibonacci
-```
-
-If you want to output a specific Fibonacci number (for example, the 5th Fibonacci number), you can pass it as an argument when running the container:
-```bash
-docker run -d fibonacci 5
 
 
 
