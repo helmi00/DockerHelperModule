@@ -1,13 +1,9 @@
 # Dockerfile
 
-FROM node:alpine
+FROM mcr.microsoft.com/powershell:latest
 
 WORKDIR /app
 
-COPY package*.json ./
-
-RUN npm install
-
 COPY . .
 
-CMD ["node", "./fibonacci.js"]
+CMD ["pwsh", "./fibonacci.ps1"]
